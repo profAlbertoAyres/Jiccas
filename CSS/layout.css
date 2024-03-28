@@ -32,7 +32,7 @@ body {
     list-style: none;
     padding: 0;
     margin-top: 3px;
-    margin-bottom: 0;
+    margin-bottom: 0;   
     
 }
 
@@ -41,12 +41,15 @@ body {
     margin: 1px 0;
     padding: 0;
 }
+
+
 .menuTopo a {
     display: block;
     color: #000;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 20px;
     float: right;
     margin: 0;
 }
@@ -54,7 +57,9 @@ body {
 .menuTopo a:hover {
     background-color: #373737;
     color: #fff;
-    font-weight: bold;
+    font-weight: bold; 
+    transform: scale(1.1, 1.2);
+    transition: color 1s ease-in-out, background-color 1s ease-in-out, transform 1s ease-in-out;
 }
 
 .corpo{
@@ -95,6 +100,11 @@ footer {
     width: 100%;
     padding: 20px;
     text-align: center;
+}
+
+.imagens img:hover{
+    transform: scale(1.03);
+    transition: transform 1s ease-in-out;
 }
 
 @media screen and (max-width: 1028px) {

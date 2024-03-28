@@ -1,74 +1,93 @@
-
-
-.itemMenu {
-    margin: 0 1px;
-}
-
-.linkItem {
-    text-decoration: none;
-    font-size: 14pt;
-    font-weight: 400;
-    color: #fff;
-    padding: 0 15px;
-}
-
-.menuDireito {
-    padding: 0;
+* {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.menuDireito a {
-    display: block;
-    margin: auto;
-    border: none;
-    background-color: rgb(11, 9, 88);
-    padding: 8px 13px;
-    border-radius: 4px;
+body {
+    font-size: 20px;
+}
+
+.container {
+    display: table;
+    height: 100vh;
+}
+
+nav.menu-lateral {
+    display: table-cell;
+    vertical-align: top;
+    width: 60px;
+    height: 100%;
+    padding: 40px 0 40px 5px;
+    background-color: black;
+    box-shadow: 3px 0 0 #e0d4dc;
+    overflow: hidden;
+}
+
+.btn-menu {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-menu i {
     color: #fff;
-    text-decoration: none;
-}
-
-
-
-.menu {
-    padding: 1.5rem 4rem;
-}
-
-.menuBotao {
-    display: block;
-}
-
-.menuBotao button {
-    background-color: transparent;
-    color: #fff;
-    border: none;
+    font-size: 24px;
     cursor: pointer;
 }
 
-.menuResp ul {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 1rem;
+nav.menu-lateral ul {
     list-style: none;
+    height: 100%;
 }
 
-.menuResp .item-menu {
-    display: block;
-    padding: 1.2rem;
+nav.menu-lateral.mostar {
+    width: 300px;
 }
 
-.menuResp .menuDireito {
-    display: block;
-    padding: 1rem 2rem;
+
+.tm {
+    display: none;
 }
 
-.menuResp .menuDireito a {
+nav.menu-lateral {
+    transition: 0.1s;
+}
+
+ul li.menu-itens:hover {
+    background-color: #49253b;
+}
+
+
+ul li.menu-itens a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 2px;
+    display: flex;
+    line-height: 40px;
+}
+
+ul li.menu-itens a .menu-text {
+    margin-left: 20px;
+}
+
+ul li.menu-itens a .menu-icon i {
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+
+main {
+    background-color: #f7f7f7;
+    padding: 10px;
+    display: table-cell;
+    vertical-align: top;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
     text-align: center;
-    display: block;
-    width: 100%;
-}
-
-.abrir {
-    display: block;
+    padding: 20px;
 }
