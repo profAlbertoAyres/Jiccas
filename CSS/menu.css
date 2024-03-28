@@ -91,3 +91,29 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        height: auto;
+        display: block;
+        /* Volta para layout normal em telas menores */
+    }
+
+    .menu-resp {
+        display: none;
+    }
+
+    nav.menu-lateral,
+    main {
+        display: block;
+        width: 100%;
+    }
+
+    footer {
+        position: static;
+    }
+    nav.menu-lateral.mostar {
+        width: 100%;
+    }
+}
