@@ -19,9 +19,6 @@ btnMenu.addEventListener('click', function () {
         btnMenu.innerHTML='<i class="bi bi-list"></i>';
     else
         btnMenu.innerHTML = '<i class="bi bi-x-circle"></i>';
-    if(screenWidth=780){
-
-    }
     menuResp.classList.toggle('menu-resp');
     menuSide.classList.toggle('mostar');
     aparecerTexto();
