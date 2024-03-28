@@ -85,9 +85,57 @@ main {
     vertical-align: top;
 }
 
+main:after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+main .listaPratos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    /* Centraliza os produtos horizontal e verticalmente */
+}
+
+main .prato {
+    width: 300px;
+    /* Largura fixa de cada produto */
+    margin: 10px;
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+main .prato img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+main .prato h2 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+main .prato p {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  
+main .prato ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+main .prato ul li {
+    margin-bottom: 5px;
+  
+  }
 footer {
-    position: fixed;
-    bottom: 0;
     text-align: center;
     padding: 20px;
 }
@@ -113,6 +161,7 @@ footer {
     footer {
         position: static;
     }
+
     nav.menu-lateral.mostar {
         width: 100%;
     }
